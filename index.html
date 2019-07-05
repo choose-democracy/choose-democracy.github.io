@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="democratic voices">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="application.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <p>进入下线状态，请开启蓝牙，编辑设备名用作运动标语，如果请求伙伴传播信息请标语用S开头，看周围标语请打开眼睛，让同声的人走在一起</p>
+        <p>
+        <button id="eye">打开眼睛</button>
+        </p>
+        <p>
+          中国人的资产不是和流氓共享的，资产的主人是继承中华神传文化的中华儿女
+        </p>
+        <p>
+          中国人不以霸气，自大为豪，而以仁爱，自由，平等来获得世人的尊重
+        </p>
+        <p>
+          我们不要疯狂宇宙，我们要祖国的海阔天空
+        </p>
+        <p>
+          面对大风大浪，我们不往外看，我们寻求我们的心志，我们相信大海会因着我们的内心的强大而宁息下来
+        </p>
+        <p>
+          道生两仪，两仪生四象，四象生八卦
+        </p>
+        <img src="4q.png"></img>
+      </center>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script>
+      $("#eye").click(function() {
+        navigator.bluetooth.requestDevice({
+          acceptAllDevices: true
+        })
+      });
+    </script>
+  </body>
+</html>
